@@ -34,6 +34,21 @@ class MyLinkList{
     
   }
 
+  void insert(int position, int value){
+
+var nodeToBeInserted = Node(value);
+var currentNode = head;
+  for(int i = 0; i< position - 1; i++){
+
+   currentNode = currentNode?.next;
+
+  }
+nodeToBeInserted?.next = currentNode?.next;
+  currentNode?.next = nodeToBeInserted;
+
+     
+  }
+
   void printNodes(){
   
    

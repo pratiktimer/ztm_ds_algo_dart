@@ -43,7 +43,8 @@ void main(List<String> arguments) {
 MyLinkList rc= MyLinkList();
 rc.init(10);
 rc.append(5);
-  rc.append(16);
-   rc.prepend(1);
-  rc.printNodes();
+rc.append(16);
+rc.prepend(1);
+rc.insert(2, 6);
+rc.printNodes();
  }
