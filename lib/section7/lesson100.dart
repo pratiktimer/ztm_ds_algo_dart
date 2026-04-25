@@ -20,11 +20,18 @@ class MyLinkList{
   void append(int value){
     var nextNode = Node(value);
     nextNode.next = null;
-    if(tail?.next == null){
     tail?.next = nextNode;
     tail = nextNode;
     length++;
-    }
+    
+  }
+
+    void prepend(int value){
+    var nextNode = Node(value);
+    nextNode.next = head;
+    head = nextNode;
+    length++;
+    
   }
 
   void printNodes(){
