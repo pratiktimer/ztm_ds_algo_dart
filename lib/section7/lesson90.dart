@@ -10,13 +10,13 @@
 class RecurringCharacter {
   int? getRecurringCharacter(List<int> array) {
     // Creating the Map using Map Constructor
-    var map_name = new Map();
+    var mapName = {};
 
-    for(int i = 0; i< array.length;i++){
-      if(map_name.containsKey(array[i])){
+    for (int i = 0; i < array.length; i++) {
+      if (mapName.containsKey(array[i])) {
         return array[i];
       }
-      map_name[array[i]] = true;
+      mapName[array[i]] = true;
     }
     return null;
   }
