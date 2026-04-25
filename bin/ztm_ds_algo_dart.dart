@@ -2,6 +2,7 @@ import 'package:ztm_ds_algo_dart/section_6/lesson73.dart';
 import 'package:ztm_ds_algo_dart/section_6/lesson75.dart';
 import 'package:ztm_ds_algo_dart/section_6/lesson78.dart';
 import 'package:ztm_ds_algo_dart/section7/lesson85.dart';
+import 'package:ztm_ds_algo_dart/section7/lesson90.dart';
 void main(List<String> arguments) {
   // 73. Implementing An Array
   // var newArray = MyArray(length: 0, data: {});
@@ -23,10 +24,18 @@ void main(List<String> arguments) {
   //
 
    ///85. Exercise: Implement A Hash Table
-   var myHashTable = HashTable(size:50);
-   myHashTable.set('grapes', 10000);
-   myHashTable.set('grapess', 20000);
-   print("${myHashTable.getHash('grapes')} => ${myHashTable.get('grapes')}");
-    print("${myHashTable.getHash('grapess')} => ${myHashTable.get('grapess')}");
+  //  var myHashTable = HashTable(size: 3);
+
+  // myHashTable.set("apple", 100);
+  // myHashTable.set("banana", 200);
+  // myHashTable.set("papel", 300); // collision-safe
+
+  //  print("${myHashTable.getHash('apple')} => ${myHashTable.get('apple')}");
+  //   print("${myHashTable.getHash('banana')} => ${myHashTable.get('banana')}");
+  //  myHashTable.getKeys();
+
+  //90. Excercize: First Recurring Character
+RecurringCharacter rc= RecurringCharacter();
+print(rc.getRecurringCharacter([2, 3, 4, 5]));
   
  }
