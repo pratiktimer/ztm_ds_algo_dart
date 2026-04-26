@@ -5,6 +5,7 @@ import 'package:ztm_ds_algo_dart/section7/lesson85.dart';
 import 'package:ztm_ds_algo_dart/section7/lesson90.dart';
 import 'package:ztm_ds_algo_dart/section7/lesson100.dart';
 import 'package:ztm_ds_algo_dart/section7/lesson109.dart';
+import 'package:ztm_ds_algo_dart/section9/lesson123.dart';
 void main(List<String> arguments) {
   // 73. Implementing An Array
   // var newArray = MyArray(length: 0, data: {});
@@ -52,15 +53,24 @@ void main(List<String> arguments) {
 // rc.printNodes();
 
 // 109. Doubly Linked List
-MyLinkList rc= MyLinkList();
-rc.init(10);
+// MyLinkList rc= MyLinkList();
+// rc.init(10);
  
-rc.append(5);
-rc.append(16);
-rc.prepend(1);
-rc.insert(2, 6);
+// rc.append(5);
+// rc.append(16);
+// rc.prepend(1);
+// rc.insert(2, 6);
 
-rc.remove(2);
-rc.reverse();
-rc.printNodes();
+// rc.remove(2);
+// rc.reverse();
+// rc.printNodes();
+
+
+// 126. Imlement Stack
+MyStack my = MyStack();
+my.push("google.com");
+my.push("udemy.com");
+my.push("discord.com");
+my.push("youtube.com");
+my.pop();
  }
