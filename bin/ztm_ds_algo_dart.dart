@@ -6,6 +6,7 @@ import 'package:ztm_ds_algo_dart/section7/lesson90.dart';
 import 'package:ztm_ds_algo_dart/section7/lesson100.dart';
 import 'package:ztm_ds_algo_dart/section7/lesson109.dart';
 import 'package:ztm_ds_algo_dart/section9/lesson123.dart';
+import 'package:ztm_ds_algo_dart/section9/lesson124.dart';
 void main(List<String> arguments) {
   // 73. Implementing An Array
   // var newArray = MyArray(length: 0, data: {});
@@ -66,11 +67,21 @@ void main(List<String> arguments) {
 // rc.printNodes();
 
 
-// 126. Imlement Stack
-MyStack my = MyStack();
+// // 123. Imlement Stack With LL
+// MyStack my = MyStack();
+// my.push("google.com");
+// my.push("udemy.com");
+// my.push("discord.com");
+// my.push("youtube.com");
+// my.pop();
+
+// 124. Imlement Stack With Arrary
+MyStackWithArray my = MyStackWithArray();
 my.push("google.com");
 my.push("udemy.com");
 my.push("discord.com");
 my.push("youtube.com");
 my.pop();
+my.printNodes();
+my.peak();
  }
