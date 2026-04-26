@@ -4,6 +4,7 @@ import 'package:ztm_ds_algo_dart/section_6/lesson78.dart';
 import 'package:ztm_ds_algo_dart/section7/lesson85.dart';
 import 'package:ztm_ds_algo_dart/section7/lesson90.dart';
 import 'package:ztm_ds_algo_dart/section7/lesson100.dart';
+import 'package:ztm_ds_algo_dart/section7/lesson109.dart';
 void main(List<String> arguments) {
   // 73. Implementing An Array
   // var newArray = MyArray(length: 0, data: {});
@@ -40,11 +41,26 @@ void main(List<String> arguments) {
 // print(rc.getRecurringCharacter([2, 3, 4, 5]));
 
 // 100. Link List
+// MyLinkList rc= MyLinkList();
+// rc.init(10);
+// rc.append(5);
+// rc.append(16);
+// rc.prepend(1);
+// rc.insert(2, 6);
+
+// rc.remove(2);
+// rc.printNodes();
+
+// 109. Doubly Linked List
 MyLinkList rc= MyLinkList();
 rc.init(10);
+ 
 rc.append(5);
 rc.append(16);
 rc.prepend(1);
 rc.insert(2, 6);
+
+rc.remove(2);
+rc.reverse();
 rc.printNodes();
  }

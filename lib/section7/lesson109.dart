@@ -1,5 +1,5 @@
 
-class MyLinkList{
+class MyDLinkList{
   Node? head;
   Node? tail;
   int length = 0;
@@ -11,6 +11,7 @@ class MyLinkList{
 
     Node current = Node(value);
     current.next = null;
+    current.prev = null;;
     head = tail = current;
     length = 1;
    }
@@ -20,20 +21,20 @@ class MyLinkList{
   void append(int value){
     var nextNode = Node(value);
     nextNode.next = null;
+    nextNode.prev = tail;
     tail?.next = nextNode;
     tail = nextNode;
     length++;
-    
     
   }
 
     void prepend(int value){
     var nextNode = Node(value);
+    nextNode.prev = null;
     nextNode.next = head;
+    this.head?.prev = nextNode;
     head = nextNode;
     length++;
-
-    
     
   }
 
@@ -46,9 +47,10 @@ var currentNode = head;
    currentNode = currentNode?.next;
 
   }
-nodeToBeInserted?.next = currentNode?.next;
+  
+  nodeToBeInserted?.next = currentNode?.next;
   currentNode?.next = nodeToBeInserted;
- 
+
      
   }
 
@@ -76,47 +78,23 @@ if(length == position - 1){
 
     length--;
 
- 
-
-  }
-
-  void printNodes(){
   
-   
-     var currentNode = head;
-      while(currentNode != null){
-        print(currentNode?.value);
-        currentNode = currentNode?.next;
-      }
-    
+
   }
 
+void printNodes() {
+  var currentNode = head;
 
-  void reverse(){
+  while (currentNode != null) {
+    print(
+      "Prev: ${currentNode.prev?.value} | "
+      "Current: ${currentNode.value} | "
+      "Next: ${currentNode.next?.value}"
+    );
 
-    var current = head;
-   
-   
-    var prev = null;
-    late Node? next;
-    while(current != null){
-
-      next = current?.next;
-
-      current?.next = prev;
-
-      prev = current;
-
-      current = next;
-    }
-var temp = head;
- 
-head = tail;
-tail = temp;
-
-    
-   
+    currentNode = currentNode.next;
   }
+}
 }
   
 
@@ -125,6 +103,7 @@ tail = temp;
 class Node {
    final int value;
     Node? next;
+    Node? prev;
   Node(this.value);
  
  
