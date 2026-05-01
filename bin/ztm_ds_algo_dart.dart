@@ -7,6 +7,11 @@ import 'package:ztm_ds_algo_dart/section7/lesson100.dart';
 import 'package:ztm_ds_algo_dart/section7/lesson109.dart';
 import 'package:ztm_ds_algo_dart/section9/lesson123.dart';
 import 'package:ztm_ds_algo_dart/section9/lesson124.dart';
+import 'package:ztm_ds_algo_dart/section9/lesson126.dart';
+import 'package:ztm_ds_algo_dart/section9/lesson129.dart';
+import 'package:ztm_ds_algo_dart/section10/lesson136.dart';
+import 'dart:convert';
+
 void main(List<String> arguments) {
   // 73. Implementing An Array
   // var newArray = MyArray(length: 0, data: {});
@@ -76,12 +81,41 @@ void main(List<String> arguments) {
 // my.pop();
 
 // 124. Imlement Stack With Arrary
-MyStackWithArray my = MyStackWithArray();
-my.push("google.com");
-my.push("udemy.com");
-my.push("discord.com");
-my.push("youtube.com");
-my.pop();
-my.printNodes();
-my.peak();
- }
+// MyStackWithArray my = MyStackWithArray();
+// my.push("google.com");
+// my.push("udemy.com");
+// my.push("discord.com");
+// my.push("youtube.com");
+// my.pop();
+// my.printNodes();
+// my.peak();
+
+// 126. Imlement Queue With LL
+// MyQueue my = MyQueue();
+// my.enqueue("pratik");
+// my.enqueue("sidhant");
+// print(my.enqueue("tatson"));
+// // my.peek();
+// print(my.dequeue());
+
+// 129
+// MyQueueWithStack obj = MyQueueWithStack();
+//   obj.push(1);
+//   int param2 = obj.pop();
+//   int param3 = obj.peek();
+//   bool param4 = obj.empty();
+//  }
+
+
+// 136. Binary Seach Tree
+BinarySearchTree bst = BinarySearchTree();
+bst.insert(9);
+bst.insert(4);
+bst.insert(6);
+bst.insert(20);
+bst.insert(170);
+bst.insert(15);
+bst.insert(1);
+print(jsonEncode(bst.toMap()));
+
+}
